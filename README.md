@@ -7,10 +7,11 @@
   - [Package](#package)
 - [Example](#example)
 - [How it Works](#how-it-works)
+- [Credits](#credits)
 
 <!-- /TOC -->
 
-The goal of rvisidata is to combine the power of [Visidata](https://visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`
+The goal of rvisidata is to combine the power of [Visidata](https://visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
 
 ## Installation
 
@@ -38,3 +39,9 @@ vd(iris)
 ## How it Works
 
 Internally, `rvisidata` writes the data frame as a csv file to a temporary folder and then loads it with `visidata`. Be therefore careful with very large data frames, because the writing process can take a while. It will delete the temporary file after the `visidata` session is closed.
+
+I do not claim that this implementation is efficient or very elegant. But it works. Suggestions for making it faster are very welcome.
+
+## Credits
+
+[Visidata](https://github.com/paulklemm/rvisidata) is developed and maintained by Saul Pwanson and Anja Kefala ([official GitHub repository](https://github.com/saulpw/visidata)).
