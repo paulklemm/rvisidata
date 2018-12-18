@@ -13,6 +13,6 @@ vd <- function(dat) {
   system(paste0("vd ", temp_file))
   # Delete the temporary file
   file.remove(temp_file) %>%
-    # We wrap it in "invisible" to remove the "TRUE" output, which file.remove will give
+    # We wrap it in "invisible" to remove the "TRUE" output when file.remove deleted the temporary file
     invisible()
 }
