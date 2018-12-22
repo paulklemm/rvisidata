@@ -49,4 +49,4 @@ Right now this tool only opens the data frame and discards any changes you make 
 
 ## Credits
 
-[Visidata](https://github.com/paulklemm/rvisidata) is developed and maintained by Saul Pwanson and Anja Kefala ([official GitHub repository](https://github.com/saulpw/visidata)).
+[Visidata](https://visidata.org) is designed and developed by Saul Pwanson ([official GitHub repository](https://github.com/saulpw/visidata)).
