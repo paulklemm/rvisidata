@@ -12,7 +12,5 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    readr,
-    magrittr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
