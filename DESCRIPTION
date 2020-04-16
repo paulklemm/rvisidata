@@ -5,7 +5,8 @@ Authors@R:
     person(given = "Paul",
            family = "Klemm",
            role = c("aut", "cre"),
-           email = "paul.klemm@posteo.net")
+           email = "paul.klemm@posteo.net",
+           comment = c(ORCID = "https://orcid.org/0000-0002-5985-1737"))
 Description: Open any dataframe with visidata, a terminal-based spreadsheet application.
 License: MIT + file LICENSE
 Encoding: UTF-8
