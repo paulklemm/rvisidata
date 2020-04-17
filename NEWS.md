@@ -1,3 +1,8 @@
+# rvisidata 0.0.3
+
+- Add `jsonlite` as optional dependency
+- Prefer to serialize dataframes as `json` if `jsonlite` is installed
+
 # rvisidata 0.0.2
 
 - Optionally support integration with `tmux` ( @mstr3336 #3 )
