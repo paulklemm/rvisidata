@@ -2,7 +2,7 @@
 get_vd_cmd <- function() {
   tmux_cmd <- getOption("rvisidata.tmux")
   
-  if (length(Sys.getenv("TMUX")) == 0) return("vd")
+  if (Sys.getenv("TMUX", unset = "TMUX_IS_UNSET") == "TMUX_IS_UNSET") return("vd")
   
   # Check for null before checking value
   # Null input clobbers logical returns (returns 0 length)
