@@ -1,6 +1,6 @@
 Package: rvisidata
 Title: Brings A Swiss Army Chainsaw for Data to R
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person(given = "Paul",
            family = "Klemm",

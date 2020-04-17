@@ -1,3 +1,7 @@
+# rvisidata 0.0.2
+
+- Optionally support integration with `tmux`
+
 # rvisidata 0.0.1
 
 - Loose `readr` and `magrittr` dependency
