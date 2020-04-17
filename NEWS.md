@@ -1,6 +1,8 @@
 # rvisidata 0.0.2
 
 - Optionally support integration with `tmux`
+- No longer delete the temporary file when `vd` returns
+  Instead, it will be cleaned up when R is terminated
 
 # rvisidata 0.0.1
 
