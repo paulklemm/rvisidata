@@ -43,6 +43,43 @@ Internally, `rvisidata` writes the data frame as a csv file to a temporary folde
 
 I do not claim that this implementation is efficient or very elegant. But it works. Suggestions for making it faster are very welcome.
 
+## Options
+
+This package supports integration with `tmux`. 
+
+The default behaviour is to open `vd` in a vertical pane above the current pane, if R is running in a `tmux` session.
+
+To disable this, set:
+
+```r
+options(rvisidata.tmux = FALSE)
+```
+
+### Advanced
+
+To customize the way `tmux` sets up this workspace (For example, opening `vd` in a new window rather than pane), you 
+may supply your own shell script that invokes `vd` on your dataset.
+
+Set:
+
+```r
+options(rvisidata.tmux = "path/to/your/script")
+```
+
+Your script should take one argument, the filename to be opened.
+
+For example, the following will open your dataframe in a vertical split
+above the R console window, and return focus back to R:
+
+```bash
+#!/bin/bash
+
+filename=$1
+
+tmux split-window -vb -p 70 "vd $filename" \; \
+  select-pane -l
+```
+
 ## Limitations
 
 Right now this tool only opens the data frame and discards any changes you make for two reasons: (1) you should do your data manipulation in `R` to have a reproducible analysis workflow and (2) it is easier to implement this way 😇.
