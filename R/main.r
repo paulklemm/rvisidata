@@ -3,10 +3,19 @@
 #' @export
 #' @param dat dataframe; Data you want to to visualize with visidata
 vd <- function(dat) {
+  file_ext <- ".csv"
+  serialize_fun <- write.csv
+  
+  # Prefer to use json over the sadly ubiquitous, wack CSV format
+  if (requireNamespace("jsonlite", quietly = TRUE)) {
+    file_ext <- ".json"
+    serialize_fun <- jsonlite::write_json
+  }
+
   # R gives us a temporary file
-  temp_file <- tempfile("dat", fileext = ".csv")
+  temp_file <- tempfile("dat", fileext = file_ext)
   # Write input to the temporary file
-  write.csv(dat, temp_file)
+  serialize_fun(dat, temp_file)
   
   # Check if we should use vd directly, 
   # or a tmux wrapper
