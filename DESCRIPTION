@@ -19,6 +19,7 @@ Description: Open any dataframe with visidata, a terminal-based spreadsheet appl
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
+Suggests: jsonlite
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
