@@ -2,13 +2,13 @@
 % Please edit documentation in R/main.r
 \name{vd}
 \alias{vd}
-\title{Open data with visidata}
+\title{Open dataframe using visidata}
 \usage{
 vd(dat)
 }
 \arguments{
-\item{dat}{dataframe; Data you want to to visualize with visidata}
+\item{dat}{dataframe to open in visidata}
 }
 \description{
-Open data with visidata
+Open dataframe using visidata
 }

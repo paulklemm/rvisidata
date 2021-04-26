@@ -1,13 +1,13 @@
-#' Open data with visidata
+#' Open dataframe using visidata
 #'
 #' @export
-#' @param dat dataframe; Data you want to to visualize with visidata
+#' @param dat dataframe to open in visidata
 vd <- function(dat) {
   file_ext <- ".csv"
   serialize_fun <- write.csv
 
   # Prefer to use json over CSV format
-  if (requireNamespace("jsonlite", quietly = TRUE)) {
+  if (require("jsonlite")) {
     file_ext <- ".json"
     serialize_fun <- jsonlite::write_json
   }
