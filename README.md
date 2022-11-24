@@ -52,18 +52,24 @@ The default behaviour is to open `vd` in a vertical pane above the current pane,
 To disable this, set:
 
 ```r
-options(rvisidata.tmux = FALSE)
+options(rvisidata.cmd = FALSE)
+```
+
+If you're using the `kitty` terminal emulator (https://github.com/kovidgoyal/kitty), you can also open `vd` in a new tab within kitty, like this:
+
+```r
+options(rvisidata.cmd = "kitty")
 ```
 
 ### Advanced
 
-To customize the way `tmux` sets up this workspace (For example, opening `vd` in a new window rather than pane), you 
+To customize the way `tmux` or `kitty` set up this workspace (For example, opening `vd` in a new window rather than pane), you 
 may supply your own shell script that invokes `vd` on your dataset.
 
 Set:
 
 ```r
-options(rvisidata.tmux = "path/to/your/script")
+options(rvisidata.cmd = "path/to/your/script")
 ```
 
 Your script should take one argument, the filename to be opened.
