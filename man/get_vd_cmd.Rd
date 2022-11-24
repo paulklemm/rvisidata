@@ -2,7 +2,7 @@
 % Please edit documentation in R/tmux.r
 \name{get_vd_cmd}
 \alias{get_vd_cmd}
-\title{Get visidata command depedning on the TMUX settings}
+\title{Get visidata command}
 \usage{
 get_vd_cmd()
 }
@@ -10,5 +10,5 @@ get_vd_cmd()
 visidata command as string
 }
 \description{
-Get visidata command depedning on the TMUX settings
+Get visidata command
 }
