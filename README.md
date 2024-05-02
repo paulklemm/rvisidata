@@ -39,15 +39,15 @@ vd(iris)
 
 ## How it Works
 
-Internally, `rvisidata` writes the data frame as a csv file to a temporary folder and then loads it with `visidata`. Be therefore careful with very large data frames, because the writing process can take a while. It will delete the temporary file after the `visidata` session is closed.
+Internally, `rvisidata` writes the data frame as a `csv` file to a temporary folder and then loads it with `visidata`. Be therefore careful with very large data frames, because the writing process can take a while. It will delete the temporary file after the `visidata` session is closed.
 
-I do not claim that this implementation is efficient or very elegant. But it works. Suggestions for making it faster are very welcome.
+I do not claim that this implementation is efficient or elegant. But it works. Suggestions for making it faster are very welcome.
 
 ## Options
 
-This package supports integration with `tmux`. 
+This package supports integration with `tmux`.
 
-The default behaviour is to open `vd` in a vertical pane above the current pane, if R is running in a `tmux` session.
+The default behavior is to open `vd` in a vertical pane above the current pane, if R is running in a `tmux` session.
 
 To disable this, set:
 
@@ -82,7 +82,7 @@ tmux split-window -vb -p 70 "vd $filename" \; \
 
 ## Limitations
 
-Right now this tool only opens the data frame and discards any changes you make for two reasons: (1) you should do your data manipulation in `R` to have a reproducible analysis workflow and (2) it is easier to implement this way 😇.
+This tool opens the data frame and discards any changes you make for two reasons: (1) you should do your data manipulation in `R` to have a reproducible analysis workflow and (2) it is easier to implement this way 😇.
 
 ## Credits
 
