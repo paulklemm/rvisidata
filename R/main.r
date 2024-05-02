@@ -1,8 +1,31 @@
+#' Check if visidata is installed
+#'
+#' This function checks if visidata is installed on the system.
+#' If not, it stops the execution and prompts the user to install visidata.
+#'
+#' @return No return value. If visidata is not installed, the function stops execution.
+#' @export
+check_vd <- function() {
+  if (system("vd --version", ignore.stdout = TRUE, ignore.stderr = TRUE) != 0) {
+    stop("visidata is not installed. Please install visidata and try again.", call. = FALSE)
+  }
+}
+
 #' Open dataframe using visidata
 #'
+#' This function opens a dataframe in visidata. It first checks if jsonlite is installed,
+#' and if so, it uses jsonlite to write the dataframe to a temporary json file.
+#' If jsonlite is not installed, it writes the dataframe to a temporary csv file.
+#' It then opens the temporary file in visidata.
+#'
+#' @param dat The dataframe to open in visidata.
+#' @return The original dataframe, invisibly.
 #' @export
-#' @param dat dataframe to open in visidata
 vd <- function(dat) {
+  
+  # Check if visidata is installed
+  check_vd()
+
   file_ext <- ".csv"
   serialize_fun <- write.csv
 
