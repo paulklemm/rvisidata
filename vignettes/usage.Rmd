@@ -1,0 +1,31 @@
+---
+title: "usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Usage
+
+```{r setup}
+library(rvisidata)
+```
+
+Use `rvisidata` with the `iris` dataset.
+
+```{r vd-iris}
+vd(iris)
+```
+
+## Limitations
+
+Any changes to the data made in within visidata is *not* stored or passed back to `R`. You can use visidata solely to display and explore the data.

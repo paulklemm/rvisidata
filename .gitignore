@@ -4,3 +4,4 @@
 .tmp-projections
 *.tar.gz
 *.Rcheck
+inst/doc
