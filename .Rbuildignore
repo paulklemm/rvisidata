@@ -1,3 +1,5 @@
 ^LICENSE\.md$
 .devcontainer
 .tmp-projections
+^CRAN-SUBMISSION$
+^cran-comments\.md$
