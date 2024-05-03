@@ -2,3 +2,5 @@
 .RData
 .Rproj.user
 .tmp-projections
+*.tar.gz
+*.Rcheck

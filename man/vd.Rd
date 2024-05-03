@@ -7,8 +7,14 @@
 vd(dat)
 }
 \arguments{
-\item{dat}{dataframe to open in visidata}
+\item{dat}{The dataframe to open in visidata.}
+}
+\value{
+The original dataframe, invisibly.
 }
 \description{
-Open dataframe using visidata
+This function opens a dataframe in visidata. It first checks if jsonlite is installed,
+and if so, it uses jsonlite to write the dataframe to a temporary json file.
+If jsonlite is not installed, it writes the dataframe to a temporary csv file.
+It then opens the temporary file in visidata.
 }

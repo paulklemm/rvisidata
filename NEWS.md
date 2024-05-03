@@ -1,3 +1,8 @@
+# rvisidata 1.0.0
+
+- Revise the package to be CRAN-compliant
+- First CRAN release
+
 # rvisidata 0.0.3
 
 - Add `jsonlite` as optional dependency

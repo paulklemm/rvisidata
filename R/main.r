@@ -27,10 +27,10 @@ vd <- function(dat) {
   check_vd()
 
   file_ext <- ".csv"
-  serialize_fun <- write.csv
+  serialize_fun <- utils::write.csv
 
   # Prefer to use json over CSV format
-  if (require("jsonlite")) {
+  if (requireNamespace("jsonlite")) {
     file_ext <- ".json"
     serialize_fun <- jsonlite::write_json
   }

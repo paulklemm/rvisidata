@@ -1,11 +1,11 @@
 Package: rvisidata
-Title: Brings A Swiss Army Chainsaw for Data to R
-Version: 0.0.3
+Title: Brings a Swiss Army Chainsaw for Data to R
+Version: 1.0.0
 Authors@R:
     c(
     person(given = "Paul",
            family = "Klemm",
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            email = "paul.klemm@posteo.net",
            comment = c(ORCID = "https://orcid.org/0000-0002-5985-1737")),
     person(given = c("Matthew", "Mark"),
@@ -17,9 +17,10 @@ Authors@R:
     )
 Description: Open any dataframe with visidata, a terminal-based spreadsheet application.
 License: MIT + file LICENSE
+SystemRequirements: visidata (>= 1.0)
 Encoding: UTF-8
 LazyData: true
 Imports:
 Suggests: jsonlite
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.1
