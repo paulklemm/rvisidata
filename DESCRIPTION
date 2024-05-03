@@ -15,7 +15,7 @@ Authors@R:
              "matthew.strasiotto@gmail.com"), 
        role = c("ctb"))
     )
-Description: Open any dataframe with visidata, a terminal-based spreadsheet application.
+Description: Open any data frame with visidata, a terminal-based spreadsheet application.
 License: MIT + file LICENSE
 SystemRequirements: visidata (>= 1.0)
 Encoding: UTF-8

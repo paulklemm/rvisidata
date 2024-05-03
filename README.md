@@ -73,4 +73,4 @@ This tool opens the data frame and discards any changes you make for two reasons
 
 ## Credits
 
-[Visidata](https://www.visidata.org) is designed and developed by Saul Pwanson ([official GitHub repository](https://www.github.com/saulpw/visidata)).
+[Visidata](https://www.visidata.org) is designed and developed by Saul Pwanson ([official GitHub repository](https://github.com/saulpw/visidata)).
