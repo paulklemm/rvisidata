@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 library(rvisidata)
 ```
 
-You need to have Visidata installed. Please follow the official installation instructions [provided here](https://visidata.org/install/).
+You need to have Visidata installed. Please follow the official installation instructions [provided here](https://www.visidata.org/install/).
 
 To verify visidata is installed correctly, `vd --version` should print out the installed version.
 

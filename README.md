@@ -1,12 +1,12 @@
 # rvisidata
 
-The goal of rvisidata is to combine the power of [Visidata](https://visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
+The goal of rvisidata is to combine the power of [Visidata](https://www.visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
 
 ## Installation
 
 ### Visidata
 
-You need to have Visidata installed. Please follow the official installation instructions [provided here](https://visidata.org/install/).
+You need to have Visidata installed. Please follow the official installation instructions [provided here](https://www.visidata.org/install/).
 
 To verify visidata is installed correctly, `vd --version` should print out the installed version.
 
@@ -73,4 +73,4 @@ This tool opens the data frame and discards any changes you make for two reasons
 
 ## Credits
 
-[Visidata](https://visidata.org) is designed and developed by Saul Pwanson ([official GitHub repository](https://github.com/saulpw/visidata)).
+[Visidata](https://www.visidata.org) is designed and developed by Saul Pwanson ([official GitHub repository](https://www.github.com/saulpw/visidata)).
