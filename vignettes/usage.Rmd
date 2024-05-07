@@ -1,8 +1,8 @@
 ---
-title: "usage"
+title: "Introduction to rvisidata"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{usage}
+  %\VignetteIndexEntry{Introduction to rvisidata}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -24,11 +24,11 @@ You need to have Visidata installed. Please follow the official installation ins
 
 To verify visidata is installed correctly, `vd --version` should print out the installed version.
 
-## Usage
+## Introduction to rvisidata
 
 Use `rvisidata` with the `iris` dataset.
 
-```{r vd-iris, eval=nzchar(Sys.which("vd"))}
+```{r vd-iris, eval=FALSE}
 vd(iris)
 ```
 

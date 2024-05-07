@@ -1,5 +1,5 @@
 Package: rvisidata
-Title: Brings a Swiss Army Chainsaw for Data to R
+Title: Brings a Swiss Army Chainsaw for Data
 Version: 1.0.0
 Authors@R:
     c(
@@ -15,7 +15,7 @@ Authors@R:
              "matthew.strasiotto@gmail.com"), 
        role = c("ctb"))
     )
-Description: Open any data frame with visidata, a terminal-based spreadsheet application.
+Description: Open any data frame with 'visidata', a terminal-based spreadsheet application.
 License: MIT + file LICENSE
 SystemRequirements: visidata (>= 1.0)
 Encoding: UTF-8
