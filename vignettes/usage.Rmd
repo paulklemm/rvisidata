@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 library(rvisidata)
 ```
 
-You need to have Visidata installed. Please follow the official installation instructions [provided here](https://www.visidata.org/install/).
+You need to have VisiData installed. Please follow the official installation instructions [provided here](https://www.visidata.org/install/).
 
 To verify visidata is installed correctly, `vd --version` should print out the installed version.
 
@@ -28,10 +28,15 @@ To verify visidata is installed correctly, `vd --version` should print out the i
 
 Use `rvisidata` with the `iris` dataset.
 
-```{r vd-iris, eval=FALSE}
+```{r vd-iris}
+# This function calls an interactive VisiData session with the provided data frame.
+# The session will block any further code execution until it's exited.
+# The \dontrun{} is used here to prevent execution during vignette rendering and R CMD check.
+# \dontrun{
 vd(iris)
+# }
 ```
 
 ## Limitations
 
-Any changes to the data made in within visidata is *not* stored or passed back to `R`. You can use visidata solely to display and explore the data.
+Any changes to the data made in within VisiData is *not* stored or passed back to `R`. You can use VisiData solely to display and explore the data.
