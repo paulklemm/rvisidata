@@ -1,5 +1,5 @@
 Package: rvisidata
-Title: Brings a Swiss Army Chainsaw for Data
+Title: Wrapper For 'Visidata', A Interactive Multitool For Tabular Data
 Version: 1.0.0
 Authors@R:
     c(
@@ -7,12 +7,13 @@ Authors@R:
            family = "Klemm",
            role = c("aut", "cre", "cph"),
            email = "paul.klemm@posteo.net",
-           comment = c(ORCID = "https://orcid.org/0000-0002-5985-1737")),
+           comment = c(ORCID = "https://orcid.org/0000-0002-5985-1737")
+    ),
     person(given = "Saul",
            family = "Pwanson",
            role = "aut",
-           email = "bbs@saul.pw"
-    )
+           email = "cran@saul.pw"
+    ),
     person(given = c("Matthew", "Mark"),
            family = "Strasiotto", 
            email = c(
