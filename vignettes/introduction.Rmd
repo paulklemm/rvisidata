@@ -28,13 +28,13 @@ To verify visidata is installed correctly, `vd --version` should print out the i
 
 Use `rvisidata` with the `iris` dataset.
 
-```{r vd-iris}
+```{r vd-iris, eval=FALSE}
 # This function calls an interactive VisiData session with the provided data frame.
 # The session will block any further code execution until it's exited.
 # The \dontrun{} is used here to prevent execution during vignette rendering and R CMD check.
-# \dontrun{
+#' \dontrun{
 vd(iris)
-# }
+#' }
 ```
 
 ## Limitations
