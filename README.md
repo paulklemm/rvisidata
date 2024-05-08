@@ -1,6 +1,8 @@
-# rvisidata <a href="https://github.com/paulklemm/rvisidata"><img src="hexsticker/rvisidata_hexsticker.png" align="right" height="200" /></a>
+# rvisidata <a href="https://github.com/paulklemm/rvisidata"><img src="hexsticker/rvisidata_hexsticker.png" align="right" height="250" /></a>
 
 The goal of rvisidata is to combine the power of [Visidata](https://www.visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
+
+VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
 
 ## Installation
 
