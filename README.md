@@ -1,4 +1,4 @@
-# rvisidata
+# rvisidata <a href="https://github.com/paulklemm/rvisidata"><img src="hexsticker/rvisidata_hexsticker.png" align="right" height="200" /></a>
 
 The goal of rvisidata is to combine the power of [Visidata](https://www.visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
 
