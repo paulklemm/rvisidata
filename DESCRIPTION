@@ -1,5 +1,5 @@
 Package: rvisidata
-Title: Wrapper for 'Visidata', a Interactive Multitool for Tabular Data
+Title: Wrapper for 'Visidata', an Interactive Multitool for Tabular Data
 Version: 1.0.0
 Authors@R:
     c(
