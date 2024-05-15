@@ -1,5 +1,7 @@
 # rvisidata <a href="https://github.com/paulklemm/rvisidata"><img src="hexsticker/rvisidata_hexsticker.png" align="right" height="250" /></a>
 
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rvisidata)](https://cran.r-project.org/package=rvisidata)
+
 The goal of rvisidata is to combine the power of [Visidata](https://www.visidata.org/), _"A Swiss Army Chainsaw for Data"_, with `R`.
 
 VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
@@ -14,10 +16,10 @@ To verify visidata is installed correctly, `vd --version` should print out the i
 
 ### Package
 
-rvisidata can be installed with devtools from the official GitHub repo:
+rvisidata is available on CRAN.
 
 ```r
-devtools::install_github('paulklemm/rvisidata')
+install.packages("rvisidata")
 ```
 
 ## Example
